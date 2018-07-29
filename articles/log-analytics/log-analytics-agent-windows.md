@@ -139,7 +139,7 @@ To retrieve the product code from the agent install package directly, you can us
 			    Ensure = "Present"
 			    Path  = $OIPackageLocalPath
 			    Name = "Microsoft Monitoring Agent"
-			    ProductId = "8A7F2C51-4C7D-4BFD-9014-91D11F24AAE2"
+			    ProductId = "D666640E-64C1-49E0-9ECD-2CF406AEEF37"
 			    Arguments = '/C:"setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_ID=' + $OPSINSIGHTS_WS_ID + ' OPINSIGHTS_WORKSPACE_KEY=' + $OPSINSIGHTS_WS_KEY + ' AcceptEndUserLicenseAgreement=1"'
 			    DependsOn = "[xRemoteFile]OIPackage"
 		    }
